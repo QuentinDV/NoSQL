@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RadioStream Analytics</title>
+    <link rel="stylesheet" href="/web/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Projet NoSQL MongoDB</p>
+        <h1>RadioStream Analytics</h1>
+      </div>
+      <div class="status" id="status">Connexion...</div>
+    </header>
+
+    <main class="shell">
+      <aside class="sidebar">
+        <h2>Requetes</h2>
+        <div class="query-list" id="queryList"></div>
+      </aside>
+
+      <section class="workspace">
+        <div class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow" id="queryId">Selection</p>
+              <h2 id="queryTitle">Chargement</h2>
+            </div>
+            <button id="runButton" class="primary" type="button">Executer</button>
+          </div>
+          <p class="description" id="queryDescription"></p>
+          <form class="params" id="paramsForm"></form>
+        </div>
+
+        <div class="panel results">
+          <div class="panel-heading">
+            <h2>Resultats</h2>
+            <button id="copyButton" class="secondary" type="button">Copier JSON</button>
+          </div>
+          <pre id="results">{}</pre>
+        </div>
+      </section>
+    </main>
+
+    <script src="/web/app.js"></script>
+  </body>
+</html>
